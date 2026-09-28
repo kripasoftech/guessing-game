@@ -3,26 +3,26 @@
 # Importing random module to get random number between range
 import random
 
-# Taking input from user of guess number as integer to match with random number
-guess_number = int(input("Enter a number between 1 and 10 to correct your guess: "))
+# Taking input from user to guess number as integer to match with random number
+guess_number = int(input("Please enter a number between 1 and 10 to correct your guess: "))
 
 # Defining correct number using int module function
 correct_number = random.randint(1, 10)
 
-# Initiating a valiable to count attempt
+# Initiating a valiable to count attempts
 attempt = 3
 
-# Using while function to run statement multiple time
+# Using while loop to run statement multiple times
 # Matching input with correct_number using control function (if)
 while attempt > 0:
     if guess_number == correct_number:
-        print(f"Congratulations! You have got the right number it is {correct_number}.")
+        print(f"Congratulations! You have got the right number, it is {correct_number}.")
 
         # Stopping the loop after matching guess_number with correct_number
         break
     else:
 
-        # Reducing attempt number after failing the first 
+        # Reducing attempt count after failing the one 
         attempt -= 1
 
         # Retaking the user input for remaining attempt
